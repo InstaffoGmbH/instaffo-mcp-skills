@@ -1,0 +1,17 @@
+{
+  "name": "instaffo-mcp-skills",
+  "metadata": {
+    "description": "Skills and agents for recruiters working with the Instaffo MCP server"
+  },
+  "owner": {
+    "name": "Instaffo GmbH"
+  },
+  "plugins": [
+    {
+      "name": "instaffo-recruiting",
+      "source": "./plugins/instaffo-recruiting",
+      "description": "Scout, the Instaffo recruiting agent: job criteria, pre-screening, interview prep, transcript analysis and team notes on top of the Instaffo MCP",
+      "version": "0.1.0"
+    }
+  ]
+}

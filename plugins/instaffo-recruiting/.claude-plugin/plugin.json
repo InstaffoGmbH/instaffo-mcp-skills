@@ -1,0 +1,10 @@
+{
+  "name": "instaffo-recruiting",
+  "version": "0.1.0",
+  "description": "Scout, the Instaffo recruiting agent: job criteria, pre-screening, interview prep, transcript analysis and team notes on top of the Instaffo MCP",
+  "author": { "name": "Instaffo GmbH" },
+  "skills": "./skills/",
+  "agents": [
+    "./agents/scout.md"
+  ]
+}

@@ -1,0 +1,32 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate plugins
+        run: |
+          claude plugin validate .
+          for plugin in plugins/*/; do
+            claude plugin validate "$plugin"
+          done
+
+      - name: Lint README
+        run: ./scripts/lint-readme.sh
+
+      - name: Lint versions
+        run: ./scripts/lint-versions.sh
