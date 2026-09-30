@@ -12,7 +12,6 @@ Skills live in `plugins/instaffo-recruiting/skills/<name>/SKILL.md`. Read `insta
 .claude-plugin/marketplace.json          # Marketplace registry
 plugins/instaffo-recruiting/
 ├── .claude-plugin/plugin.json           # Plugin manifest
-├── .mcp.json                            # Instaffo MCP server
 ├── CHANGELOG.md
 ├── agents/scout.md
 └── skills/<name>/SKILL.md

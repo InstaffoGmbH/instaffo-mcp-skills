@@ -4,24 +4,46 @@ Skills and agents for recruiters who work with the [Instaffo](https://instaffo.c
 
 Every write action (chat messages, notes, accepts, rejects, stage moves) is drafted first and runs only after you approve it.
 
+> [!IMPORTANT]
+> **Beta access only.** The Instaffo MCP is currently available to selected Instaffo customers. Skills and tool behavior can change without notice. To request access or send feedback, email [nikolai@instaffo.com](mailto:nikolai@instaffo.com).
+
+## Requirements
+
+- An Instaffo recruiter account with MCP beta access
+- An AI tool with MCP support: Claude Code, Claude Desktop, Codex, Cursor, or similar
+
 ## Setup
 
-### Claude Code
+### 1. Connect the Instaffo MCP
+
+Add the server once in your tool. Skip this if it is already connected.
+
+- URL: `https://app.instaffo.com/mcp`
+- Transport: HTTP, login with your Instaffo recruiter account (OAuth)
+
+Claude Code:
+
+```bash
+claude mcp add --transport http --scope user instaffo https://app.instaffo.com/mcp
+```
+
+Then run `/mcp` in Claude Code and log in.
+
+### 2. Install the skills
+
+Claude Code:
 
 ```bash
 claude plugin marketplace add InstaffoGmbH/instaffo-mcp-skills
-claude plugin install --user instaffo-recruiting@instaffo-mcp-skills
+claude plugin install instaffo-recruiting@instaffo-mcp-skills
 ```
 
-The plugin brings the Instaffo MCP server (`https://app.instaffo.com/mcp`). Run `/mcp` once and log in with your Instaffo recruiter account.
+Restart Claude Code after the install.
 
-### Other tools (Codex, Cursor, Gemini CLI, ...)
+Other tools (Codex, Cursor, Gemini CLI, ...): the skills use the open `SKILL.md` format.
 
-The skills use the open `SKILL.md` format.
-
-1. Add the MCP server `https://app.instaffo.com/mcp` (HTTP, OAuth) to your tool.
-2. Copy or symlink `plugins/instaffo-recruiting/skills/*` into your tool's skills folder, for example `~/.codex/skills/` or `.cursor/skills/`.
-3. Tools without skill support: point them to [AGENTS.md](AGENTS.md).
+1. Copy or symlink `plugins/instaffo-recruiting/skills/*` into your tool's skills folder, for example `~/.codex/skills/` or `.cursor/skills/`.
+2. Tools without skill support: point them to [AGENTS.md](AGENTS.md).
 
 ## Plugins
 
@@ -62,6 +84,10 @@ This folder holds candidate data. Keep it out of public repositories.
 /analyze-interview <transcript>
 /write-note                    → post the verdict to Instaffo
 ```
+
+## Feedback
+
+Bugs, ideas and access requests: [nikolai@instaffo.com](mailto:nikolai@instaffo.com).
 
 ## Contributing
 

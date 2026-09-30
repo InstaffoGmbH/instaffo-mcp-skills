@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "instaffo": {
-      "type": "http",
-      "url": "https://app.instaffo.com/mcp"
-    }
-  }
-}
