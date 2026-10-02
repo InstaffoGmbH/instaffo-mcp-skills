@@ -32,6 +32,13 @@ Approval covers one action. "Post the note" does not approve a rejection. Set `n
 - No job description. Job criteria come from the user (see `/define-criteria`).
 - No hire, and no rejection after triage. Give the user the application `url` for the panel.
 - No attachments. `documents` lists file names only.
+- No CV file. `get_application` returns the parsed profile only. The uploaded CV and linked profiles can be newer.
+
+## Language levels
+
+`languages[].rating` values (`A2`, `B2`, `C1`, `C2`) are buckets, not exact CEFR levels. `C2` also covers native speakers, `A2` also covers A1. Use the company panel labels in notes: `A2` basic, `B2` conversational, `C1` fluent, `C2` business fluent. Never write a code as if it were a test result.
+
+Judge the level the job needs, never whether someone is a native speaker. Requiring or preferring native speakers is discrimination by origin under the AGG.
 
 ## Notes format
 
@@ -40,3 +47,6 @@ Approval covers one action. "Post the note" does not approve a rejection. Set `n
 ## Personal data
 
 Candidate data is personal data under GDPR. Keep local files inside the user's working folder. Do not paste profiles into other services.
+
+- **Humans decide.** Every accept, reject and verdict is the user's decision. Your proposal is input, never an automated decision (GDPR Art. 22).
+- **Retention.** Files in `recruiting/` are only needed while the process runs. Remind the user to delete a candidate's files once the process is closed and the company's retention period has passed.

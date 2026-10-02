@@ -59,3 +59,5 @@ Call <HH:MM-HH:MM>.
 - Quote the candidate's own words when you challenge a claim.
 - Mark dates or numbers that do not add up (short stints, notice "none" while employed, salary above range).
 - Check every fact in the file against the raw data before you save it.
+- Do not ask what the screening answers already settle. Salary inside the range and the notice period need no question. Ask only when a value is outside the criteria.
+- Open with the first real question, not "any questions for me?". Questions from the candidate go to the end, where the interviewer's explanations also belong.
