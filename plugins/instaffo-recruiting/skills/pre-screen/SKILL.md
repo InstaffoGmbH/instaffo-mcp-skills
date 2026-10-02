@@ -8,7 +8,7 @@ user-invocable: true
 
 ## Steps
 
-1. Load `recruiting/<job-slug>/criteria.md`. If it is missing, run `/define-criteria` first.
+1. Load `recruiting/<job-slug>/criteria.md`. If it is missing, run `/define-criteria` first. Follow `recruiting-best-practices` for CV shape and chat replies.
 2. `list_applications(job_id, stage: ["application"])`. Page through until `meta.total` is reached. Include untriaged rows (`stage: null`).
 3. For each application, `get_application` and `get_screening`. Score against the criteria:
    - **Gate**: pass, fail, or unclear from the CV
@@ -28,5 +28,6 @@ user-invocable: true
 ## Rules
 
 - Unclear gate is `unsure`, not `reject`. The call is where it gets tested.
+- No chat reply is never a reason to wait or reject. Propose a call, or one follow-up message if a single answer decides it.
 - Do not penalize missing data the profile never asks for.
 - Do not use age, gender, origin, religion, disability, or family status, or anything that points to them (photo, name, graduation year as an age proxy). This is required by the AGG (German anti-discrimination law).

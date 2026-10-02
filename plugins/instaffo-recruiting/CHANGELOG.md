@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0
+
+### Added
+
+- `recruiting-best-practices` skill: CV linearity, station length, job hopping and gaps. A missing chat reply is no reason to wait or reject
+
+### Changed
+
+- `pre-screen` and Scout follow the best practices and propose a call or one follow-up instead of waiting for replies
+
 ## 0.1.1
 
 ### Changed

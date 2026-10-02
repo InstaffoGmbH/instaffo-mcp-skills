@@ -61,6 +61,7 @@ Other tools (Codex, Cursor, Gemini CLI, ...): the skills use the open `SKILL.md`
 - `/analyze-interview` - Transcript → call notes, recommendation, and feedback on how you interviewed
 - `/write-note` - Draft the team note with a verdict and post it to Instaffo
 - `instaffo-mcp-basics` - Auto-loaded: write safety and MCP traps
+- `recruiting-best-practices` - Auto-loaded: reading CV shape (linearity, job hopping, gaps) and handling missing chat replies
 
 ## Working files
 
