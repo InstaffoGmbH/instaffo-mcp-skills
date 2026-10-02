@@ -42,6 +42,7 @@ So:
 
 - If the candidate asked a question in the chat that nobody answered, answer it in one or two sentences above the invite text. Only use facts the user gave you.
 - Never answer for the company with claims the user did not make.
+- An invite always comes with a stage move. Propose `send_message` and `move_application_stage(stage: "first_interview")` as one step, so one approval covers both. Never leave an invited candidate in `screening`.
 
 ## Proposals
 

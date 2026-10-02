@@ -15,7 +15,7 @@ These tools change what candidates or colleagues see. Draft first, show the draf
 - `move_application_stage`
 - `create_note`, `update_note`, `delete_note` (delete cannot be undone)
 
-Approval covers one action. "Post the note" does not approve a rejection. Set `notify_responsibles` only when the user asks for it.
+Approval covers one action. "Post the note" does not approve a rejection. The one exception: approving an invite also approves moving the candidate to `first_interview`. Set `notify_responsibles` only when the user asks for it.
 
 ## Reading data
 
