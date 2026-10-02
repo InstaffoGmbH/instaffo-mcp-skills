@@ -15,7 +15,7 @@ Auto-generated summaries skip details and invent agreement. Read the transcript 
 ## Steps
 
 1. Load the prep file `recruiting/<job-slug>/<date> <Name>.md` and `criteria.md`.
-2. Read the full transcript. An empty or very short transcript means the call failed. Say so and stop.
+2. Read the full transcript. An empty or very short transcript can mean the call failed, or that the tool wrote one file per language. Look for a second transcript of the same call before you say it failed.
 3. Count words per speaker for the talk share. Target for the interviewer: 20-30%.
 4. Append to the prep file:
 

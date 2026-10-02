@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.0
+
+### Added
+
+- `recruiting-best-practices` skill: CV linearity, station length, job hopping and gaps. A missing chat reply is no reason to wait or reject
+
+### Changed
+
+- `pre-screen` and Scout follow the best practices and propose a call or one follow-up instead of waiting for replies
+- `instaffo-mcp-basics`: language levels are buckets, use the panel labels. GDPR: humans decide, delete files after the process
+- `prep-interview`: no questions the screening answers already settle, open with a real question
+- `write-note`: format for profile-only pre-screen notes
+- An invite always moves the candidate to `first_interview` in the same approved step
+- `analyze-interview`: check for a second transcript before calling a call failed
+
 ## 0.1.1
 
 ### Changed
