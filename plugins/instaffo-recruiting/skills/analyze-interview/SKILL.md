@@ -12,8 +12,6 @@ A transcript as pasted text or a file path. Any tool works (Gemini, Teams, Zoom,
 
 Auto-generated summaries skip details and invent agreement. Read the transcript itself, all of it.
 
-Only analyze calls the candidate agreed to have recorded or transcribed. In Germany, recording a conversation without consent is a criminal offense (§ 201 StGB). If consent is unclear, ask the user before you read the transcript.
-
 ## Steps
 
 1. Load the prep file `recruiting/<job-slug>/<date> <Name>.md` and `criteria.md`.
