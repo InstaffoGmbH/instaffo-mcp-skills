@@ -22,7 +22,6 @@ Background
 - <evidence, with quotes>
 
 Mindset / other criteria: <one line each>
-Not covered: <items for the next round>
 Situation: <salary, notice, location, languages>
 
 Decision: <verdict>. <one-line reason>
@@ -37,3 +36,5 @@ For a verdict without a call, use `Pre-screen <DD.MM.YYYY> (<reviewer>, profile 
 
 - Colleagues read the note without context. No internal abbreviations, no interviewer feedback.
 - Facts only from the transcript, profile, or chat.
+- Record what the candidate showed. No list of topics the call did not cover, and no "no example of X" lines for questions nobody asked.
+- The decision line carries the interviewer's own judgement, doubts included. With a mixed verdict, say what speaks for and against in their terms.

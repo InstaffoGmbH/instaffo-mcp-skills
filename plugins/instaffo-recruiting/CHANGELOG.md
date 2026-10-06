@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+### Changed
+
+- `write-note`: no "Not covered" section and no lines about unasked questions. The decision line states the interviewer's doubts
+
 ## 0.2.0
 
 ### Added
