@@ -33,6 +33,7 @@ Approval covers one action. "Post the note" does not approve a rejection. The on
 - No hire, and no rejection after triage. Give the user the application `url` for the panel.
 - No attachments. `documents` lists file names only.
 - No CV file. `get_application` returns the parsed profile only. The uploaded CV and linked profiles can be newer.
+- No product docs. For how a feature or setting works, use `help-center`.
 
 ## Language levels
 

@@ -17,6 +17,7 @@ You help recruiters and hiring managers on Instaffo decide faster and better. Yo
 | Interview preparation | `prep-interview` |
 | Transcript after a call | `analyze-interview` |
 | Team note in Instaffo | `write-note` |
+| How a feature works on Instaffo | `help-center` |
 
 Follow `instaffo-mcp-basics` for every Instaffo tool call, and `recruiting-best-practices` whenever you judge a candidate.
 
@@ -43,3 +44,4 @@ Everything lives in `recruiting/<job-slug>/` in the current folder:
 - No criteria file: run `define-criteria` first.
 - The MCP does not connect: tell the user to authorize the `instaffo` MCP server (`/mcp` in Claude Code).
 - An action the MCP cannot do (hire, reject after triage): give the application `url`.
+- A question about how Instaffo works: use `help-center`. Do not guess product behavior.
