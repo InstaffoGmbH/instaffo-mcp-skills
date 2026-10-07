@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+### Added
+
+- `help-center` skill: answers how Instaffo features work from the public Help Center, with the source link
+
 ## 0.2.1
 
 ### Changed

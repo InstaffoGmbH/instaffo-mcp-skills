@@ -60,6 +60,7 @@ Other tools (Codex, Cursor, Gemini CLI, ...): the skills use the open `SKILL.md`
 - `/prep-interview` - Candidate-specific interview guide from CV, chat and criteria
 - `/analyze-interview` - Transcript → call notes, recommendation, and feedback on how you interviewed
 - `/write-note` - Draft the team note with a verdict and post it to Instaffo
+- `/help-center` - Answer "how does X work on Instaffo" from the public Help Center, with the source link
 - `instaffo-mcp-basics` - Auto-loaded: write safety and MCP traps
 - `recruiting-best-practices` - Auto-loaded: reading CV shape (linearity, job hopping, gaps) and handling missing chat replies
 
