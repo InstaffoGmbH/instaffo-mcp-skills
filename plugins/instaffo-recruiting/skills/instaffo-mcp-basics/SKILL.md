@@ -11,7 +11,7 @@ user-invocable: false
 These tools change what candidates or colleagues see. Draft first, show the draft, and call the tool only after the user says yes to that exact draft:
 
 - `send_message`: the candidate is notified at once
-- `screen_application`: `reject` concludes the application and notifies the candidate
+- `screen_application`: `accept` posts the job greeting in the chat (see Greeting), `reject` concludes the application and notifies the candidate
 - `move_application_stage`
 - `create_note`, `update_note`, `delete_note` (delete cannot be undone)
 
@@ -26,6 +26,15 @@ Approval covers one action. "Post the note" does not approve a rejection. The on
 - `candidate.email` and `phone` are null until the recruiter unlocks contact details in the panel.
 - `data_archived: true` means the profile was purged. Say so, do not guess.
 - `talent_feed: true` means the recruiter sourced the candidate. The candidate did not apply, so expect less context in the chat.
+
+## Greeting
+
+Each job has a greeting. Accepting with `screen_application` posts it as the first chat message. In `list_messages` it is the first message, with `uuid: null`.
+
+- Do not draft or send your own first message on accept. Use the `message` parameter only for something the greeting does not cover.
+- A good greeting asks only what the screening questions do not cover. Example: how the candidate's way of working with AI tools changed, or one concrete example from their work.
+- Check the greeting every time you see it. If it asks for salary expectation, CV, start date, notice period, location or similar hard facts, tell the user at once. These belong in the job's screening questions, where Instaffo collects them in a structured way (`get_screening` shows them). Suggest moving them there.
+- No reply to the greeting is not a red flag. See `recruiting-best-practices`.
 
 ## What the MCP cannot do
 

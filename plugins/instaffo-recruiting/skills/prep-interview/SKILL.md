@@ -10,7 +10,7 @@ user-invocable: true
 
 1. Find the candidate: the user names them, or read today's calls from the user's calendar if a calendar tool is available. Match names to `list_applications` rows.
 2. Load `recruiting/<job-slug>/criteria.md`. If it is missing, run `/define-criteria` first.
-3. Read `get_application`, `get_screening`, `list_messages` and `list_notes`. Read every CV station and every chat message in full.
+3. Read `get_application`, `get_screening`, `list_messages` and `list_notes`. Read every CV station and every chat message in full. Check the greeting for hard-fact questions (see `instaffo-mcp-basics`, Greeting).
 4. Read the last 2-3 files in `recruiting/<job-slug>/` for the style the user accepted, and `interviewer-feedback.md` if it exists.
 5. Write `recruiting/<job-slug>/<YYYY-MM-DD> <Name>.md` with the template below.
 
