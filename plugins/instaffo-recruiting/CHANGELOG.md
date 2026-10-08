@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1
+
+### Changed
+
+- `instaffo-mcp-basics`: accepting posts the job greeting, so agents draft no first message. Flag greetings that ask for hard facts and suggest screening questions instead
+- `pre-screen` and `prep-interview` point to the greeting rules
+
 ## 0.3.0
 
 ### Added

@@ -24,7 +24,7 @@ Quote the dates you counted. "Short stints" without numbers is not evidence.
 
 ## Chat replies
 
-A missing reply in the Instaffo chat is not a negative signal.
+A missing reply in the Instaffo chat, including to the job greeting, is not a negative signal.
 
 - Candidates miss messages: notifications are off, they apply to many jobs at once, they are on holiday, or they do not check the platform every day.
 - Many candidates prefer to answer questions in the screening call instead of in writing.

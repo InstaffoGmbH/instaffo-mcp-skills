@@ -23,7 +23,7 @@ user-invocable: true
 |---|---|---|---|---|---|
 
 6. Below the table, one line per candidate with the reason.
-7. Ask the user which proposals to apply. Apply each one with `screen_application` only after a yes. Rejections send no chat message unless the user gives one.
+7. Ask the user which proposals to apply. Apply each one with `screen_application` only after a yes. Rejections send no chat message unless the user gives one. Accepts post the job greeting, so draft no first message (see `instaffo-mcp-basics`, Greeting).
 
 ## Rules
 
