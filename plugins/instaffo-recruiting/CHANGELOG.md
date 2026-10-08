@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.2
+
+### Changed
+
+- `recruiting-best-practices`: always check profile links (GitHub, portfolio) and ask the user to check them too. Self-rated skill years are not evidence. Weigh the latest station, and check which side "Full Stack" work is on. Flag disagreeing location texts. Where earlier employers were is not a criterion
+- `recruiting-best-practices` and `define-criteria`: whether freelance-only careers fit depends on the job; ask once and store it in the criteria file
+- `pre-screen`: open profile links, list them for the user, and turn the user's overrides into criteria after asking
+
 ## 0.3.1
 
 ### Changed

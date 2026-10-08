@@ -17,10 +17,26 @@ Look at the shape of the career before the keywords.
 - **Overlaps.** Two full-time stations at the same time in different places do not add up. Mark it.
 - **Verify before you write it down.** The parsed Instaffo profile is sometimes outdated or parsed wrong. Before a gap, an overlap or a missing skill goes into a note, ask the user to check the CV file or the linked profile, which the MCP does not return.
 - **Tailored is not fake.** A profile that mirrors your job ad may be AI-polished for your application. Call it tailored. Call it not credible only when facts contradict each other (dates, places, titles).
-- **Titles vs. content.** "Lead" or "Senior" in a title means little. Look at what the description says the person did, and for how long.
+- **Titles vs. content.** "Lead" or "Senior" in a title means little. Look at what the description says the person did, and for how long. The same goes for "Full Stack": check which side the described work is on. Weigh the latest station most, because it shows what the person does today.
+- **Self-ratings are not evidence.** Years per skill in the screening answers are typed in by the candidate. A value just above an automatic reject (for example 1 year when 0 rejects), or the maximum on every skill, says nothing. Use the CV text that backs the rating.
+- **Freelance stations.** Whether long freelance-only work fits depends on the job. Some roles need team experience, some do not. Follow the criteria file. If it says nothing, ask the user once and add the answer to the file.
 - **Hands-on time.** Count only the years in roles where the person did the work the job needs. Management, consulting or teaching years do not count toward hands-on seniority.
 
 Quote the dates you counted. "Short stints" without numbers is not evidence.
+
+## Links and side projects
+
+The profile can link to GitHub, a portfolio or other work samples. For technical roles these are often the strongest evidence in the whole application.
+
+- **Always check the links.** Open each link if your tools allow it. Look for recent activity and for own projects that solve a real problem for real users.
+- **Ask the user to look too.** List every link in your proposal and ask the user to check it, also when you could open it yourself. Some pages need a login or do not load for agents.
+- **Strong work can outweigh a thin CV.** Recent, product-like side projects are a reason to accept a candidate whose CV alone looks weak. Say so in the reason.
+- **No link is not a minus.** Many good candidates have no public work. Do not penalize it.
+
+## Location
+
+- **Check the free text.** The profile city and the about-me or CV text can disagree. If the job has a location or work-permit rule and the texts disagree, flag it as a question for the call. Do not guess which one is right.
+- **Judge the work, not the place.** Where earlier employers were, or whether this is the first job in a country, is not a criterion. It points to origin, which the AGG protects.
 
 ## Chat replies
 
