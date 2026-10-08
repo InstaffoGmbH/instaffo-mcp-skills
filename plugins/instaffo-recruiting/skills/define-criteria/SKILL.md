@@ -18,6 +18,7 @@ Every other recruiting skill reads `recruiting/<job-slug>/criteria.md`. This ski
    - What is the **gate**: the one criterion that ends the process when missing?
    - What would be nice but is not required?
    - Red flags seen in past candidates.
+   - Are candidates with long freelance-only careers a fit, or does the role need team experience?
    - Salary range, location and remote rules, languages, notice period limit.
    - Interview process: steps and who runs them.
 5. Write the file with the template below. Show it and ask for corrections.
