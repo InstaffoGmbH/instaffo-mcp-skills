@@ -5,7 +5,7 @@
 ### Changed
 
 - `instaffo-mcp-basics`: new Messages section. Never answer a candidate's question on your own, copy the user's current template for "the usual message", and show the text before the first send
-- `recruiting-best-practices`: invites no longer answer open candidate questions. New red flags: maximum on every self-rating, autocomplete and chat tools as the only AI proof, courses as practice, replies copied from an AI tool, agent rule files maintained by the agent
+- `recruiting-best-practices`: invites no longer answer open candidate questions. New red flags: maximum on every self-rating, basic tool use as proof of advanced skill (the criteria file defines the levels), courses as practice, replies copied from an AI tool
 
 ## 0.3.2
 
