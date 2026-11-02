@@ -29,7 +29,7 @@ Decision: <verdict>. <one-line reason>
 
 For a verdict without a call, use `Pre-screen <DD.MM.YYYY> (<reviewer>, profile only)` as the title and replace the call sections with `Concerns`. Never write call findings into a profile-only note.
 
-4. Post with `create_note` only after the user approves. Convert to HTML (`<p>`, `<strong>`, `<ul><li>`). Leave `notify_responsibles` off unless asked.
+4. Post with `create_note` only after the user approves, as plain text (see `instaffo-mcp-basics`, Notes). Leave `notify_responsibles` off unless asked. If the user wants a colleague to weigh in, propose `reviewer_ids` and name who gets access.
 5. Report the result. Do not reject or move the candidate as part of this skill.
 
 ## Rules

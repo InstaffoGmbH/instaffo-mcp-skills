@@ -2,7 +2,7 @@
 
 Skills and agents for recruiters who work with the [Instaffo](https://instaffo.com) MCP server. They turn the MCP tools into complete recruiting workflows: criteria, pre-screening, interview prep, transcript analysis and team notes.
 
-Every write action (chat messages, notes, accepts, rejects, stage moves) is drafted first and runs only after you approve it.
+Every write action (chat messages, notes, accepts, rejects, stage moves, invites, feedback requests) is drafted first and runs only after you approve it.
 
 > [!IMPORTANT]
 > **Beta access only.** The Instaffo MCP is currently available to selected Instaffo customers. Skills and tool behavior can change without notice. To request access or send feedback, email [nikolai@instaffo.com](mailto:nikolai@instaffo.com).
@@ -57,6 +57,7 @@ Other tools (Codex, Cursor, Gemini CLI, ...): the skills use the open `SKILL.md`
 
 - `/define-criteria` - Interview you once per job and write `criteria.md`: gate, must-haves, red flags, hard facts
 - `/pre-screen` - Score new applications against the criteria and propose accept, reject or unsure
+- `/review-recommendations` - Judge the talents Instaffo recommended for a job and propose whom to invite, with a draft message
 - `/prep-interview` - Candidate-specific interview guide from CV, chat and criteria
 - `/analyze-interview` - Transcript → call notes, recommendation, and feedback on how you interviewed
 - `/write-note` - Draft the team note with a verdict and post it to Instaffo
@@ -82,6 +83,7 @@ This folder holds candidate data. Keep it out of public repositories.
 
 ```
 /pre-screen                    → triage new applications
+/review-recommendations        → invite recommended talents
 /prep-interview                → guides for today's calls
 /analyze-interview <transcript>
 /write-note                    → post the verdict to Instaffo
