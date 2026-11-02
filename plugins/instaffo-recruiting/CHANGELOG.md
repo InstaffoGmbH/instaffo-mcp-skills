@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.4.0
+
+### Added
+
+- `review-recommendations` skill: judge the talents Instaffo recommended for a job against the criteria, and invite or reject them after approval
+- `instaffo-mcp-basics`: rules for asking colleagues for feedback (`list_reviewers`, `request_feedback`, mentions in notes) and for recommendations
+
+### Changed
+
+- `instaffo-mcp-basics`: notes are plain text. `reject_application` is on the write-safety list and keeps its default delay. The AI screening can come per requirement with an overall fit tier. The CV file is available as a temporary link, and `applied_with_cv` does not mean "no CV"
+- `pre-screen` uses the per-requirement AI screening as the second opinion. `write-note` posts plain text
+- `recruiting-best-practices`: check the CV file before noting a gap; fixed a broken paragraph in Chat replies
+- `scout`: knows the new skill, and rejecting after triage is no longer listed as impossible
+
 ## 0.3.3
 
 ### Changed

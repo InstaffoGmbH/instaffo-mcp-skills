@@ -16,7 +16,7 @@ user-invocable: true
    - Hard facts from `hard_facts` and `screening_questions`
    - Red flags found
    - Links in the profile (GitHub, portfolio): open them and note recent activity and own projects (see `recruiting-best-practices`, Links and side projects)
-   - Instaffo `fit_analysis.score` as a second opinion only, never as the decision
+   - The Instaffo AI screening (`fit_tier` and per-requirement results, or the older score) as a second opinion only, never as the decision. See `instaffo-mcp-basics`, AI screening
 4. Quote the CV line behind each score. No quote means score 1 or "unclear". Self-rated skill years in the screening answers are not a quote.
 5. Present one table, sorted by recommendation:
 
