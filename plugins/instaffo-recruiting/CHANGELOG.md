@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1
+
+### Changed
+
+- `prep-interview`: new prep layout. Red, yellow and plus flags first, questions numbered by priority with a red line each, decision, then a short CV as bullets. No tables, no intro question, no stop points or minute plan. No notice period counts as a plus, not a mismatch
+
 ## 0.4.0
 
 ### Added
