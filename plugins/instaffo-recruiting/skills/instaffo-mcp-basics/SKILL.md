@@ -11,7 +11,7 @@ user-invocable: false
 These tools change what candidates or colleagues see. Draft first, show the draft, and call the tool only after the user says yes to that exact draft:
 
 - `send_message`: the candidate is notified at once
-- `screen_application`: `accept` posts the job greeting in the chat (see Greeting), `reject` concludes the application and notifies the candidate at once
+- `screen_application`: with mutual interest, `accept` posts the job greeting in the chat (see Greeting); `reject` concludes the application and notifies the candidate at once
 - `move_application_stage`
 - `reject_application`: rejects after triage. By default the candidate sees the rejection after 3 business days, and the user can still take it back in Instaffo until then. Set `delayed: false` only when the user asks for an immediate rejection
 - `create_note`, `update_note`, `delete_note` (delete cannot be undone)
@@ -30,8 +30,9 @@ Approval covers one action. "Post the note" does not approve a rejection. The on
 ## Reading data
 
 - Chain IDs: `list_jobs` → job `uuid` → `list_applications(job_id)` → application `uuid` → everything else.
+- Stage values match the panel: `screening` (new applications), `shortlist` (Vorauswahl or Akzeptiert), `first_interview`, `second_interview`, `offer`, `hired`, `rejected`. New inbound applications start in `screening`; accepted Talent Feed invites start in `shortlist`. `null` only occurs on legacy processes. Never use the retired value `application`.
 - Filter `list_applications` by `stage` on older jobs, or you page through hundreds of rejected rows. `meta.total` tells you if the list is partial.
-- `list_messages` returns `invalid_stage` for untriaged applications. Accept them with `screen_application` first, which only the user may approve.
+- Read `chat_locked` and `mutual_interest` from `get_application` or `list_applications`. Without mutual interest, chat works from `screening`. Ask for documents and read the replies before moving to `shortlist`. With mutual interest, the user must approve an accept through `screen_application` first. Both chat tools return `chat_locked` while the chat is locked.
 - `candidate.email` and `phone` are null until the recruiter unlocks contact details in the panel.
 - `data_archived: true` means the profile was purged. Say so, do not guess.
 - `talent_feed: true` means the recruiter sourced the candidate. The candidate did not apply, so expect less context in the chat.
@@ -52,10 +53,11 @@ The AI screening is a second opinion. It never replaces the user's judgment agai
 - `candidate.has_cv_document` tells you whether the candidate uploaded a CV. `applied_with_cv` only says whether they attached it to this application, so `false` does not mean "no CV".
 - The parsed CV is in `get_application`. The CV file itself is a download link in the CV answer of `get_screening`. The link expires after one hour; call `get_screening` again for a fresh one.
 - The CV file and linked profiles can be newer than the parsed profile. Check them before you write down a gap or a missing skill.
+- Chat attachments in `list_messages` have a `name` and a download `url`. Read them before you call a document set complete. Each link expires after one hour; call `list_messages` again for a fresh one.
 
 ## Greeting
 
-Each job has a greeting. Accepting with `screen_application` posts it as the first chat message. In `list_messages` it is the first message, with `uuid: null`.
+Each job has a greeting. With mutual interest, accepting with `screen_application` posts it as the first chat message. In `list_messages` it is the first message, with `uuid: null`.
 
 - Do not draft or send your own first message on accept. Use the `message` parameter only for something the greeting does not cover.
 - A good greeting asks only what the screening questions do not cover. Example: how the candidate's way of working with AI tools changed, or one concrete example from their work.
@@ -82,7 +84,7 @@ Instaffo's matching agent suggests talents for a job. They did not apply.
 - `list_recommendations(job_id)` lists the open ones, best first, with the agent's reasoning and the AI screening. `get_recommendation` shows the full profile.
 - Profiles are anonymous: no name, contact data, CV file or photo. Do not try to identify the person.
 - `invite_recommendation` sends an invite with a message. The talent has 7 days to answer. Links, email addresses and phone numbers in the message are refused. A job can send only a limited number of invites per day.
-- When the talent accepts, the recommendation becomes an application: `recommendation_status` turns `applied`, and `application_id` works with all application tools.
+- When the talent accepts, the recommendation becomes an application in `shortlist`: `recommendation_status` turns `applied`, and `application_id` works with all application tools. Its chat is open, and ATS export or qualified-application counting tied to `shortlist` starts at once.
 - `reject_recommendation` removes it. Pass the user's reason as `feedback`; it helps Instaffo improve future recommendations.
 - Only `open` recommendations can be invited or rejected. An inactive job has none.
 
@@ -91,7 +93,7 @@ Instaffo's matching agent suggests talents for a job. They did not apply.
 - No job description. Job criteria come from the user (see `/define-criteria`).
 - No hire. Give the user the application `url` for the panel.
 - No withdrawing an invite. The user does that in the panel.
-- No attachments. `documents` lists file names only.
+- No sending attachments. The agent can only read attachments already present in the chat.
 - No product docs. For how a feature or setting works, use `help-center`.
 
 ## Language levels
