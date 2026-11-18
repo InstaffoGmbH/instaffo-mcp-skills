@@ -1,6 +1,6 @@
 ---
 name: prep-interview
-description: "Prepares a candidate-specific interview guide from the Instaffo profile, chat, and job criteria: CV summary, what to check, a timed question plan, and decision rules. Use when the user says 'prepare my interview', 'prep the call with X', or 'interview notes for today's candidates'."
+description: "Prepares a candidate-specific interview guide from the Instaffo profile, chat, and job criteria: red/yellow/plus flags, questions by priority, decision rules, and a short CV. Use when the user says 'prepare my interview', 'prep the call with X', or 'interview notes for today's candidates'."
 user-invocable: true
 ---
 
@@ -21,43 +21,54 @@ user-invocable: true
 source: <application url>
 ---
 
-Call <HH:MM-HH:MM>.
+Call <day HH:MM-HH:MM>. <call language>. <salary>, <location>, notice <notice>. [LinkedIn](<url>), [GitHub](<url>)
 
-# History
+# Flags
 
-- **<Company>** (<from - to>, <duration>): <title>. <1-3 facts that matter for the criteria>
-- <education>, <salary vs. range>, <notice>, <location>, <languages>
+**Red**
 
-<chat reply summary in 1-2 lines>
+- **<claim that can fail the gate>.** <evidence: short quote or dates>
 
-# What to check
+**Yellow**
 
-1. **<gap or claim>.** <why it matters, which criterion>
-2. **Upside:** <strengths>
+- **<gap, short stints, never senior, empty GitHub, ...>.** <evidence>
 
-# <N> minutes
+**Plus**
 
-## 0-2: Intro
-## <m-n>: <topic>
+- **<strength>.** <evidence>
 
-- "<question asking for one real, recent example>"
-- Red: <answer that fails>
+# Questions
 
-## <m-n>: Their questions
+1. **<gate>**: "<question asking for one real, recent example>" Then: "<follow-up>" **Red**: <answer that fails>
+2. ...
+N-1. Only if time: "<lower-signal question>"
+N. Their questions. Next steps
 
 # Decision
 
-- <conditions>: next step
-- <conditions>: reject
+- **<next step>**: <conditions>
+- **Reject**: <conditions>
+- <which yellows are minuses only>
+
+# CV
+
+- **<Company>** <from>-<to> (<duration>), <title>. <one-line note>
+- <education>, <old gaps>
+
+# Call notes
+
+# Interview feedback
 ```
 
 ## Rules
 
-- Every "what to check" item comes from a real gap, contradiction, or unproven claim in this candidate's data. No generic items.
-- Test the gate first and give it the most time. Add a stop point: "Red: ... Stop at minute N".
+- Every flag comes from a real gap, contradiction, or unproven claim in this candidate's data. No generic items.
+- Flags come first, sorted into Red, Yellow and Plus. Red is only what can fail the gate. No notice period (can start now) is a plus, never a flag.
+- Questions are numbered by priority, gate first. Every question that can fail gets a **Red** line. No intro or framing question, no stop points, no minute plan. Lower-signal questions are marked "Only if time".
+- No tables. The CV goes last, one bullet per station.
 - Questions ask for one concrete recent example, never opinions or hypotheticals.
 - Quote the candidate's own words when you challenge a claim.
-- Mark dates or numbers that do not add up (short stints, notice "none" while employed, salary above range).
+- Mark dates or numbers that do not add up (short stints, salary above range).
 - Check every fact in the file against the raw data before you save it.
 - Do not ask what the screening answers already settle. Salary inside the range and the notice period need no question. Ask only when a value is outside the criteria.
 - Open with the first real question, not "any questions for me?". Questions from the candidate go to the end, where the interviewer's explanations also belong.
