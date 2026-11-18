@@ -51,7 +51,7 @@ A missing reply in the Instaffo chat, including to the job greeting, is not a ne
 
 So:
 
-- **Never propose to wait for a reply before inviting.** If the profile is strong enough for a call, invite now. The call is where open questions get answered.
+- **Never propose to wait for a reply before inviting.** If the profile is strong enough for a call, invite now. The call is where open questions get answered. The only exception is an explicit document-before-shortlist workflow: request the documents once and keep the application in `screening`, but still never reject for no reply.
 - **Never reject for no reply.** Judge the profile.
 - **If one question really decides the call** (for example a hard requirement the profile does not show), send one short follow-up in the chat. Do not rely on the first message having been seen. Draft it and get approval first, like every message.
 - A short or generic reply is weak evidence, not proof. Weigh it against the CV.
@@ -62,7 +62,7 @@ So:
 
 - If the candidate asked a question in the chat that nobody answered, do not answer it. Send the invite without an answer and tell the user which question is open, so they can reply themselves (see `instaffo-mcp-basics`, Messages).
 - Never answer for the company with claims the user did not make.
-- An invite always comes with a stage move. Propose `send_message` and `move_application_stage(stage: "first_interview")` as one step, so one approval covers both. Never leave an invited candidate in `screening`.
+- An invite always comes with a stage move. Propose `send_message` and `move_application_stage(stage: "first_interview")` as one step, so one approval covers both. Never leave an invited candidate in `shortlist`.
 
 ## Proposals
 

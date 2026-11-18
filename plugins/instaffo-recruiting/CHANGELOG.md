@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0
+
+### Changed
+
+- Use panel stage names, support chat and document review before shortlisting without mutual interest, and read chat attachments through temporary links
+
 ## 0.4.1
 
 ### Changed
